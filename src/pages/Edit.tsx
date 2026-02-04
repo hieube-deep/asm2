@@ -60,25 +60,40 @@ function EditPage() {
           </label>
           <input
             type="text"
-            id="text"
-            className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border rounded-lg px-3 py-2"
             {...register("title", {
-              required: true,
+              required: "Tên phim không được để trống",
+              minLength: {
+                value: 3,
+                message: "Tên phim phải có ít nhất 3 ký tự",
+              },
             })}
           />
+          {errors.title && (
+            <p className="text-red-500 text-sm">{errors.title.message}</p>
+          )}
+
         </div>
         <div>
           <label htmlFor="text" className="block font-medium mb-1">
             darution
           </label>
           <input
-            type="text"
-            id="number"
-            className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="number"
+            className="w-full border rounded-lg px-3 py-2"
             {...register("duration", {
-              required: true,
+              required: "Thời lượng không được để trống",
+              valueAsNumber: true,
+              min: {
+                value: 0,
+                message: "Thời lượng phải ≥ 0",
+              },
             })}
           />
+          {errors.duration && (
+            <p className="text-red-500 text-sm">{errors.duration.message}</p>
+          )}
+
         </div>
         <div>
           <label htmlFor="text" className="block font-medium mb-1">
@@ -95,22 +110,22 @@ function EditPage() {
         </div>
 
         {/* Select */}
-        <div>
-          <label htmlFor="selectOption" className="block font-medium mb-1">
-            Select - option
-          </label>
-          <select
-            id="selectOption"
-            className="w-full border rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            {...register("category", {
-              required: true
-            })}
-          >
-            <option value="Hành Động">Hành Động</option>
-            <option value="Kinh Dị">Kinh Dị</option>
-            <option value="Hài kịch">Hài kịch</option>
-          </select>
-        </div>
+        <select
+          className="w-full border rounded-lg px-3 py-2"
+          {...register("category", {
+            required: "Vui lòng chọn thể loại phim",
+          })}
+        >
+          <option value="">-- Chọn thể loại --</option>
+          <option value="Hành động">Hành động</option>
+          <option value="Viễn Tưởng">Viễn Tưởng</option>
+          <option value="Hoạt Hình">Hoạt Hình</option>
+        </select>
+
+        {errors.category && (
+          <p className="text-red-500 text-sm">{errors.category.message}</p>
+        )}
+
 
         {/* Submit button */}
         <button
