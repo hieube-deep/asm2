@@ -1,0 +1,33 @@
+{
+  "movies": [
+    {
+      "title": "qqqq",
+      "duration": "qqqq",
+      "poster": "123",
+      "category": "Hành Động",
+      "id": 3
+    },
+    {
+      "title": "1",
+      "duration": "2020",
+      "poster": "1",
+      "category": "Hành Động",
+      "id": 4
+    },
+    {
+      "title": "fff",
+      "duration": "ffff",
+      "poster": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExIVFRUTFxgXGBUVFRUVFRUXFxYYFxUXFRUYHSggGBolGxUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQFy0dHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQAGB//EADsQAAECAwQJAwMDAwIHAAAAAAEAAgMRIQQxQfASIlFhcYGRobEFwdETMvEjcuFSYoKisgYUM0LC0uL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAJhEAAgMAAgICAQQDAAAAAAAAAAECESEDEjFBBCJRBRMyYSOB8P/aAAwDAQACEQMRAD8A+lBWCoFcL5Q9IsFYKoVggRJE1EF0xnN8xyVgqXO3O83fHdFiDFdKucfwpUHDObkyS7DQK4VGi/cfJmigKkSzly4LjerJIcodd2UuvC6VeGc8VVgQVUnt5wVnmXKqq0Z3nMkWMsFBVgFyoRRQrKEhlVylQUhlC6slBKh51hwKjYlY6OdjnN6Xxnnb8IsU0O8y+FRgmJ7p9TPxJJjRZxqpehzpwRJ0QhgwVzzRUNCrOuSsdA2lXchQ0RySY2iVClQrFRBQI4uIw8YoxVHJMCGumhOiAXoUF+i8sONW+49+qKWTzz90rKobmrtQyrMKyKChWCGCrtSFRYqscTFLxcpcpDkMReC/SAO1EcKHrnOKTsuq9zduuOdHDkfKbc6ozTMkk8Ja0syp/cEZtQlmGUv7XEcjXwmWe6uDM2S0X5wXAVznFdiuBvPHt+FoiSovO6nyuhinGvx2VT9o3+9/upjOkEJjKOd8+zRnYrtHbJKBCMzPn8dB5TE8ERd6NqjlBXEqFdiOKqVKhICFChxuVXuQVRSL9zefh",
+      "category": "Hành Động",
+      "id": 5
+    },
+    {
+      "title": "1233",
+      "duration": "1223",
+      "poster": "123",
+      "category": "Hành Động",
+      "id": 6
+    }
+  ],
+  "users": []
+}
